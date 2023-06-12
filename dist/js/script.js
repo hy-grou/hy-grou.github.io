@@ -19,4 +19,10 @@ hamburger.addEventListener("click", function () {
   navMenu.classList.toggle("hidden");
 });
 
-alert("hello");
+// Button
+const button = document.querySelector("#button");
+
+button.addEventListener("click", function (event) {
+  event.preventDefault();
+  alert("Terima Kasih Atas Sarannya");
+});
