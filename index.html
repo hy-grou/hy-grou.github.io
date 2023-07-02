@@ -136,12 +136,13 @@
           <a href="https://www.facebook.com/aru.c.rasyid/" target="_blank"><i class='bx bxl-facebook'></i></a>
         </div>
       </div>
-      <div class="contact-form">
-        <form action="">
-          <input type="name" placeholder="Your Name" required>
-          <input type="email" placeholder="Your Email" required>
-          <textarea name="" id="" cols="35" rows="10" placeholder="How Can I Help You" required></textarea>
+      <div class="contact-form">  
+        <form action="" name="Personal-portfolio-contact-form">
+          <input type="name" placeholder="Your Name" name="nama" required>
+          <input type="email" placeholder="Your Email" name="email" required>
+          <textarea name="pesan" id="" cols="35" rows="10" placeholder="How Can I Help You" required></textarea>
           <input type="submit" value="Send Message" id="submit" class="submit" required>
+          
         </form>
       </div>
     </section>
@@ -160,5 +161,18 @@
     </section>
 
     <script type="text/javascript" src="name.js"></script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycby235N9exT8HCchvFlS4FKa7L6lLf2kBhUa7pcBiG2sfHJ9w8O1xUiQjuHTlV5H7ABgyA/exec'
+      const form = document.forms['Personal-portfolio-contact-form']
+
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
   </body>
 </html>
