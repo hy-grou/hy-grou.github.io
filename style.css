@@ -147,7 +147,7 @@ section {
   justify-content: center;
 }
 
-/* .btn {
+.btn {
   display: inline-block;
   padding: 12px 28px;
   background: var(--main-color);
@@ -157,7 +157,7 @@ section {
   letter-spacing: 1px;
   font-weight: 600;
   transition: all 0.45s ease;
-} */
+}
 
 .btn:hover {
   transform: scale(0.9);
@@ -369,10 +369,10 @@ header.sticky {
   line-height: 1;
 }
 
-.contact-text p {
+.contact-text .text {
   color: var(--second-color);
   font-size: var(--p-font);
-  line-height: 1.8;
+  line-height: 1;
   margin-bottom: 30px;
 }
 
@@ -438,7 +438,7 @@ form textarea {
 
 .contact-form textarea {
   resize: none;
-  height: 240px;
+  height: 180px;
 }
 
 .contact-form .submit {
