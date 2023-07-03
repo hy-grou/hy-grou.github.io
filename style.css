@@ -147,7 +147,7 @@ section {
   justify-content: center;
 }
 
-.btn {
+/* .btn {
   display: inline-block;
   padding: 12px 28px;
   background: var(--main-color);
@@ -157,7 +157,7 @@ section {
   letter-spacing: 1px;
   font-weight: 600;
   transition: all 0.45s ease;
-}
+} */
 
 .btn:hover {
   transform: scale(0.9);
@@ -228,7 +228,18 @@ header.sticky {
   color: var(--second-color);
   font-size: var(--p-font);
   line-height: 1.8;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+}
+
+.about-text .social-media {
+  margin-bottom: 1rem;
+}
+
+.about-text .social-media i {
+  color: var(--main-color);
+  position: relative;
+  top: 2px;
+  font-size: 1.2rem;
 }
 
 .main-text {
